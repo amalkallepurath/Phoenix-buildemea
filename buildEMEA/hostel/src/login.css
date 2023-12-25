@@ -1,0 +1,19 @@
+#login{
+    display:none;
+}
+#labelsign{
+    display:block;
+    background-color:#1E90FF;
+    width:200px;
+    color:white;
+    margin-top:10px;
+    border-radius:5px;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#inputmain{
+    justify-content: center;
+   max-width: 400px;
+    border:1px solid #1E90FF;
+}

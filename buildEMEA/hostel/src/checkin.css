@@ -1,0 +1,19 @@
+#correct{
+    background-color: rgb(51, 224, 88);
+    text-align: center;
+    color:blue;
+    font-size: 20px;
+}
+#error{
+    background-color:red;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+}
+#table{
+    width:550px;
+    
+}
+#table td{
+    padding: 20px;
+}

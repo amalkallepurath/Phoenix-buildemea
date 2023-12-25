@@ -1,0 +1,46 @@
+h1{
+    color:blue;
+}
+input{
+    
+    width: 400px;
+    height: 35px;
+}
+textarea{
+     
+    width: 400px;
+    height: 100px;
+}
+select{
+    width: 400px;
+    height: 35px;
+}
+button{
+    width: 300px;
+    height: 35px;
+    background-color:rgb(30, 138, 215);
+    border-radius: 20px;
+   
+    color:white;
+    font-size: 20px;
+}
+#reset{
+    color:rgb(20, 1, 1);
+    background-color: rgb(61, 192, 118);
+    font-size: 20px;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+}
+.radio{
+    width:20px;
+}
+#added{
+    background-color: rgb(51, 212, 94);
+    color:blue;
+    margin-bottom: 6px;
+    margin-top: 20px;
+   
+    font-size: 20px;
+   
+}
