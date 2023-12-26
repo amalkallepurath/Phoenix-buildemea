@@ -109,7 +109,7 @@ class Check extends Component{
                       <td>{item.checkoutdate}</td>
                       <td>{item.checkouttime}</td>
                     
-                      <td> <Link to={'/checkinoutedit/${item.slno}'}>edit</Link></td>
+                      <td> <Link to={'/checkinoutedit/${}'}>edit</Link></td>
                       
                 </tr>
               )

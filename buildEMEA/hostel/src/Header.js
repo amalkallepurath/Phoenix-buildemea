@@ -11,7 +11,7 @@ import Checkout from './Checkout';
 import Home from './Home';
 import Checkinout from './Checkinout';
 import Details from './Details';
-import Chechin from './Checkin';
+import Checkin from './Checkin';
 import Add from './Add';
 import Login from './Login';
 import Checkinoutedit from './Checkinoutedit';
@@ -24,31 +24,32 @@ class Header extends Component{
     return(
       <div>
         
+       
         <Router>
-        
         <header>
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/add">Add</Link></li>
-          <li><NavLink to="/chechinout">Check-in-out</NavLink></li>
+          <li><NavLink to="/checkinout">Check-in-out</NavLink></li>
           <li><Link to="/details">Details</Link></li>
-          <li><Link to="/chechinout/checkin">Check-in</Link></li>
-          <li><Link to="/chechinout/checkout">Check-out</Link></li>
-          
-          
-        </ul>
+          <li><Link to="/checkinout/checkin">Check-in</Link></li>
+          <li><Link to="/checkinout/checkout">Check-out</Link></li>
+          </ul>
         </header>
-        <Routes>
+       
+          <Routes>
           <Route exact path="/" element={<Home/>}/>
-          <Route path="/chechinout" element={<Checkinout/>}/>
+          <Route path="/checkinout" element={<Checkinout/>}/>
           <Route path="/details" element={<Details/>}/>
           <Route path="/add" element={<Add/>}/>
-          <Route path="/chechinout/checkout" element={<Checkout/>}/>
-         <Route path="/chechinout/checkin" element={<Chechin/>}/>
+          <Route path="/checkinout/checkout" element={<Checkout/>}/>
+         <Route path="/checkinout/checkin" element={<Checkin/>}/>
          <Route path="/login" element={<Login/>}/>
          <Route path="/checkinoutedit/:id" element={<Checkinoutedit/>}/>
         </Routes>
         </Router>
+          
+       
         
       </div>
     )

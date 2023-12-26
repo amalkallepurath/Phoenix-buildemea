@@ -1,5 +1,6 @@
 h1{
     color:blue;
+    margin-left: 20px;
 }
 input{
     
@@ -43,4 +44,11 @@ button{
    
     font-size: 20px;
    
+}
+.table{
+    width:700px;
+    
+}
+.table td{
+    padding: 20px;
 }
