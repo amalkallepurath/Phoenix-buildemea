@@ -37,6 +37,10 @@ class Home extends Component{
           <div className="imgbg4"><img  className="img" src={Image.Chechin}/></div>
           <Link to="/chechinout/checkout">Check-out</Link>
           </label>
+          <label>
+          <div className="imgbg2"><img  className="img" src={Image.Folder}/></div>
+          <Link to="/Checkinout">Check-in-out</Link>
+          </label>
           </div>
           </div>
           

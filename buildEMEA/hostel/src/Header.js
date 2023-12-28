@@ -9,12 +9,13 @@ import {
 
 import Checkout from './Checkout';
 import Home from './Home';
-import Checkinout from './Checkinout';
-import Details from './Details';
+
+import Details from './Detailss';
 import Checkin from './Checkin';
 import Add from './Add';
 import Login from './Login';
 import Checkinoutedit from './Checkinoutedit';
+import Checkinout from './checkinoutt';
 class Header extends Component{
   constructor(){
     super();
@@ -40,12 +41,13 @@ class Header extends Component{
           <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route path="/checkinout" element={<Checkinout/>}/>
+         
           <Route path="/details" element={<Details/>}/>
           <Route path="/add" element={<Add/>}/>
           <Route path="/checkinout/checkout" element={<Checkout/>}/>
          <Route path="/checkinout/checkin" element={<Checkin/>}/>
          <Route path="/login" element={<Login/>}/>
-         <Route path="/checkinoutedit/:id" element={<Checkinoutedit/>}/>
+         <Route path="/checkinoutedit" element={<Checkinoutedit/>}/>
         </Routes>
         </Router>
           

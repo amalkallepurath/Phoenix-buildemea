@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-import {useParams} from "react-router-dom";
+import {useParams,useLocation} from "react-router-dom";
 function Checkinoutedit(){
-    let {id}=useParams();
+   
+    const location=useLocation();
+    const {id}=location.state;
+    console.log(id);
 return(
     <div>
-        <p>{id}</p>
+        <p>njjj</p>
     </div>
 )
 }
