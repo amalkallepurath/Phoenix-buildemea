@@ -16,6 +16,7 @@ import Add from './Add';
 import Login from './Login';
 import Checkinoutedit from './Checkinoutedit';
 import Checkinout from './checkinoutt';
+import Profile from './Profile';
 class Header extends Component{
   constructor(){
     super();
@@ -48,6 +49,7 @@ class Header extends Component{
          <Route path="/checkinout/checkin" element={<Checkin/>}/>
          <Route path="/login" element={<Login/>}/>
          <Route path="/checkinoutedit" element={<Checkinoutedit/>}/>
+         <Route path="/profile/:id" element={<Profile/>}/>
         </Routes>
         </Router>
           

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from 'react-router-dom';
 import './checkinout.css';
 import axios from 'axios';
 function Checkinout() {
@@ -98,7 +99,7 @@ function Checkinout() {
                                 <td>{item.checkintime}</td>
                                 <td>{item.checkoutdate}</td>
                                 <td>{item.checkouttime}</td>
-
+                                <td><Link id="btn">edit</Link></td>
 
                             </tr>
                         )

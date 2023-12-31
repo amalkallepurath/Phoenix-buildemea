@@ -26,14 +26,17 @@ thead{
 th{
     padding:10px
 }
-#e{
-    width:100px;
-   height:30px; 
-   margin:10px;
+#btn{
+    text-decoration: none;
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
    background-color:rgb(15, 153, 15);
    color:white;
 }
 td{
     text-align: center;
-   
+   padding-top: 10px;
+   padding-bottom: 10px;
 }

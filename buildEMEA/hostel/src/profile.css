@@ -1,0 +1,41 @@
+h1 {
+    color: blue;
+    margin-left: 20px;
+}
+
+#ptable{
+    border-collapse:collapse;
+    padding:5px;
+    margin:15px;
+    width:800px;
+    }
+   #ptable tr:nth-child(odd){
+    background-color:#abc7e0;
+    padding:5px;
+    }
+   #ptable tr:nth-child(even){
+    background-color:#ECECF6;
+    }
+   #ptable td{
+    padding:10px;
+    }
+#editbtn{
+    background-color: rgb(133, 28, 28);
+    width:80px;
+    border-radius: 1px;
+    font-size: 15px;
+   
+    margin-top: 8px;
+}
+#handb{
+    display: inline-flex;
+    margin:30px;
+}
+#status{
+    background-color: rgb(82, 209, 62);
+    width:800px;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    margin-left: 15px;
+}

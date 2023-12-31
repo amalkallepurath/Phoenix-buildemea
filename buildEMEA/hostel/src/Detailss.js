@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './checkinout.css';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 function Details() {
     const [data, setdata] = useState({
         studentname: "",
@@ -37,6 +38,7 @@ function Details() {
     
     return (
         <div>
+            
             <div id="checkmenu">
                 <input type='text' name='studentname' placeholder='Enter name' onChange={take} />
                 <select name="department" required onChange={take}>
@@ -95,7 +97,8 @@ function Details() {
                     <td>{item.gname}</td>
                     <td>{item.gphone}</td>
                     <td>{item.pphone}</td>
-                    <td><input id="e" type="button" value="view profile"/></td>
+                    
+                    <td><Link to={`/profile/${item.id}`} id="btn">view profile</Link></td>
               </tr>
             )
           })
