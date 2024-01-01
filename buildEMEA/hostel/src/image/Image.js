@@ -8,7 +8,8 @@ const Image={
     Hostel:require('./hostel.jpeg'),
     Add:require('./add.png'),
     Folder:require('./folder.png'),
-    Check1:require('./a.png')
+    Check1:require('./a.png'),
+    Hostelcheckinout:require('./hostelcheckinout.jpg')
    
 }
 export default Image;

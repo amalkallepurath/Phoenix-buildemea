@@ -9,13 +9,13 @@ import {
 
 import Checkout from './Checkout';
 import Home from './Home';
-
+import Checkinout from './Checkinout';
 import Details from './Detailss';
 import Checkin from './Checkin';
 import Add from './Add';
 import Login from './Login';
 import Checkinoutedit from './Checkinoutedit';
-import Checkinout from './checkinoutt';
+
 import Profile from './Profile';
 class Header extends Component{
   constructor(){
@@ -48,7 +48,7 @@ class Header extends Component{
           <Route path="/checkinout/checkout" element={<Checkout/>}/>
          <Route path="/checkinout/checkin" element={<Checkin/>}/>
          <Route path="/login" element={<Login/>}/>
-         <Route path="/checkinoutedit" element={<Checkinoutedit/>}/>
+         <Route path="/checkinoutedit/:slno" element={<Checkinoutedit/>}/>
          <Route path="/profile/:id" element={<Profile/>}/>
         </Routes>
         </Router>

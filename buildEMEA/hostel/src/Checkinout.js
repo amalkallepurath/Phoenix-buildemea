@@ -99,7 +99,7 @@ function Checkinout() {
                                 <td>{item.checkintime}</td>
                                 <td>{item.checkoutdate}</td>
                                 <td>{item.checkouttime}</td>
-                                <td><Link id="btn">edit</Link></td>
+                                <td><Link id="btn" to={`/checkinoutedit/${item.slno}`}>edit</Link></td>
 
                             </tr>
                         )

@@ -1,0 +1,30 @@
+#checkinouthome{
+    background-image: url(./image/hostelcheckinout.jpg);
+    width:100%;
+    height: 100vh;
+   position:absolute;
+
+}
+#edit{
+    display: inline-block;
+    margin-left: 50vh;
+  margin-top: 70px;
+  width:550px;
+  background-image: linear-gradient(90deg,white,rgb(74, 171, 235),white);
+  padding:30px;
+  padding-right: 1px;
+ 
+}
+#editbutton{
+    width:100px;
+}
+label{
+    color:blue;
+    font-size: 20px;
+}
+#updatestatus{
+    background-color: rgb(38, 160, 38);
+    font-size: 20px;
+    text-align: center;
+    color:white;
+}
