@@ -23,13 +23,14 @@ $gurdiantname=$data->gurdiantname;
 $gurdiantphone=$data->gurdiantphone;
 $guardiantaddress=$data->guardiantaddress;
 $emergancycontact=$data->emergancycontact;
+$hostelfee=$data->hostelfee;
 
       $connection=mysqli_connect("localhost","root","","hostel");
       if(!$connection){
         echo"not connected";
       }
       else{
-        $sql=mysqli_query($connection,"insert into student values('','$studentname','$dob','$studentphone','$studentaddress','$genter','$department','$parentname','$parentphone','$parentaddress','$relation','$gurdiantname','$gurdiantphone','$guardiantaddress','$emergancycontact','$email','$dob','$email','$year')");
+        $sql=mysqli_query($connection,"insert into student values('','$studentname','$dob','$studentphone','$studentaddress','$genter','$department','$parentname','$parentphone','$parentaddress','$relation','$gurdiantname','$gurdiantphone','$guardiantaddress','$emergancycontact','$email','$dob','$email','$year','$hostelfee')");
       if(!$sql){
         echo"not added";
       }
