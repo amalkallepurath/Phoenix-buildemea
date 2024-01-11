@@ -37,7 +37,7 @@ class Checkin extends Component{
            }
            if(response.data=="added"){
             this.setState({
-              status:"check-out successfully"
+              status:"check-in successfully"
             })
            }
            else if(response.data=="pls checkout first"){
