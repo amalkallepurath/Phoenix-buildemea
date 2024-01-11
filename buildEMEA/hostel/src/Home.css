@@ -35,13 +35,34 @@
     text-align: center;
     border-radius:50%;
 }
+.imgbg5{
+    position: relative;
+    background-color: rgb(72, 120, 179);
+    max-width: 100px;
+    height:100px;
+    text-align: center;
+    border-radius:50%;
+}
+.imgbg6{
+    position: relative;
+    background-color: rgb(28, 195, 10);
+    max-width: 100px;
+    height:100px;
+    text-align: center;
+    border-radius:50%;
+}
 #main{
     display: inline-flex;
 }
 #a{
     text-align: center;
+    display: inline-flex;
+    
 }
 #main #a a{
     text-decoration: none;
     color:blue;
+}
+#four{
+    margin: 40px;
 }

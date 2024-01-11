@@ -21,6 +21,7 @@ class Add extends Component{
       gurdiantphone:"",
       guardiantaddress:"",
       emergancycontact:"",
+      hostelfee:"",
       status:""
     
     }
@@ -46,7 +47,8 @@ this.setState({[e.target.name]:e.target.value})
       gurdiantname:this.state.gurdiantname,
       gurdiantphone:this.state.gurdiantphone,
       guardiantaddress:this.state.guardiantaddress,
-      emergancycontact:this.state.emergancycontact
+      emergancycontact:this.state.emergancycontact,
+      hostelfee:this.state.hostelfee
     }
     
     axios.post("http://localhost/emea/insertstudentdetails.php",dat).then(response=>{
@@ -59,12 +61,12 @@ this.setState({[e.target.name]:e.target.value})
   }
   render(){
     return(
-      <div>
-       
+      <div  >
+       <div id="addmain">
         <div id="block">
           <div id="child">
             
-        <br/><h1> students details</h1><br/><br/>
+        <br/><h1 > students details</h1><br/>
         <table className='table'>
         <tr><td><label>name of student</label></td><td><input type='text' name='studentname' placeholder='Enter name' required onChange={this.take}/></td></tr>
         <tr><td><label>email of student</label></td><td><input type='email' name='email' placeholder='Enter email' required onChange={this.take}/></td></tr>
@@ -98,7 +100,7 @@ this.setState({[e.target.name]:e.target.value})
        </tr>
        </table>
        <br/><br/>
-        <br/><br/><h1> parent  details</h1><br/><br/>
+        <br/><br/><h1> parent  details</h1><br/>
         <table className='table'>
         <tr><td><label>name of parent</label></td><td><input type='text' onChange={this.take} name='parentname' placeholder='Enter name' required/></td></tr>
         <tr><td><label>phone number</label></td><td><input type='phone' onChange={this.take} name='parentphone' placeholder='Enter phone number' required/></td></tr>
@@ -112,17 +114,19 @@ this.setState({[e.target.name]:e.target.value})
        </select></td></tr>
        </table>
        <br/><br/>
-       <br/><br/><h1> guardiant  details</h1><br/><br/>
+       <br/><br/><h1> guardiant  details</h1><br/>
        <table className='table'>
        <tr><td><label>name of guardiant</label></td><td><input type='text' name='gurdiantname' onChange={this.take}  placeholder='Enter name' required/></td></tr>
        <tr><td> <label>phone number</label></td><td><input type='phone' name='gurdiantphone' onChange={this.take} placeholder='Enter phone number' required/></td></tr>
        <tr><td><label>address of guardiant</label></td><td><textarea name="guardiantaddress" onChange={this.take} placeholder='enter address' required></textarea></td></tr>
        <tr><td><label>emergancy contact</label></td><td><input type='phone' name='emergancycontact' onChange={this.take} placeholder='Enter phone number' required/></td></tr>
+       <tr><td><label>hostel fee</label></td><td><input type='text' name='hostelfee' onChange={this.take} placeholder='Enter hostel fee' required/></td></tr>
        </table>
        <br/><br/>
        <button onClick={this.insert}>Entroll student</button>
        <input id="reset" type="reset" value="reset data" /><br/>
        
+      </div>
       </div>
      <p id="added" align="center">{this.state.status}</p>
       </div>

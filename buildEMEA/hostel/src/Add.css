@@ -1,7 +1,4 @@
-h1{
-    color:blue;
-    margin-left: 20px;
-}
+
 input{
     
     width: 400px;
@@ -52,3 +49,12 @@ button{
 .table td{
     padding: 20px;
 }
+#block{
+    margin-left: 50vh;
+}
+#addmain{
+    background-color:white;
+}
+#h{
+    color:blue;
+ }

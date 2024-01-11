@@ -30,23 +30,30 @@ class Checkout extends Component{
           date:nowdate
         }
         axios.post("http://localhost/emea/checkout.php",dat).then(response=>{
-          if(response.data=="added"){
-            this.setState({
-              status:"check-out successfully"
-            })
-          }
-          else{
-            this.setState({
-              error:"please check-in first"
-            })
-          }
+         if(response.data=="p"){
+          this.setState({
+            error:"person doesn't exist"
+          })
+         }
+         if(response.data=="added"){
+          this.setState({
+            status:"check-out successfully"
+          })
+         }
+         else if(response.data=="checkin"){
+          this.setState({
+            error:"please check-in first"
+          })
+         }
         })
       }
   render(){
     return(
-      <div>
+      <div >
+       
         <p id="correct">{this.state.status}</p>
         <p id="error">{this.state.error}</p>
+        <div id="checkinmain">
         <h1>Check-out</h1>
         
         <table id="table" >
@@ -85,6 +92,7 @@ class Checkout extends Component{
        </tr>
        </table>
        <button onClick={this.upload}>Add check-out</button>
+       </div>
       </div>
     )
    

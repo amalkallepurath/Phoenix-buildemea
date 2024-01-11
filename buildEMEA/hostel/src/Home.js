@@ -21,9 +21,9 @@ class Home extends Component{
         
         
           <div id="a">
-            
-           <label for="1"> <div className="imgbg1"><img  className="img" src={Image.Add}/></div>
-          <Link to="/addstudents" id="1">Add</Link>
+            <div id="four">
+          <label > <div className="imgbg1"><img  className="img" src={Image.Add}/></div>
+          <Link to="/add" id="1">Add</Link>
           </label>
           <label>
           <div className="imgbg2"><img  className="img" src={Image.Folder}/></div>
@@ -31,7 +31,33 @@ class Home extends Component{
           </label>
           <label>
           <div className="imgbg3"><img  className="img" src={Image.Check1}/></div>
-          <Link to="/chechinout/checkin">Chech-in</Link>
+          <Link to="/checkinout/checkin">Chech-in</Link>
+          </label>
+          <label>
+          <div className="imgbg4"><img  className="img" src={Image.Chechin}/></div>
+          <Link to="/checkinout/checkout">Check-out</Link>
+          </label>
+          </div>
+          <div id="four">
+          <label>
+          <div className="imgbg6"><img  className="img" src={Image.Document}/></div>
+          <Link to="/Checkinout">Check-in-out</Link>
+          </label>
+          <label for="1"> <div className="imgbg5"><img  className="img" src={Image.Pay}/></div>
+          <Link to="/payment" id="1">Payment</Link>
+          </label>
+          <label > <div className="imgbg1"><img  className="img" src={Image.Hostelimg}/></div>
+          <Link to="/hostelfeedetails" id="1">hostel fee</Link>
+          </label>
+          <label>
+          <div className="imgbg2"><img  className="img" src={Image.Hostelfood}/></div>
+          <Link to="/fooddetails">Food Details</Link>
+          </label>
+          </div>
+          <div id="four">
+          <label>
+          <div className="imgbg3"><img  className="img" src={Image.Update}/></div>
+          <Link to="/update">Update</Link>
           </label>
           <label>
           <div className="imgbg4"><img  className="img" src={Image.Chechin}/></div>
@@ -41,6 +67,10 @@ class Home extends Component{
           <div className="imgbg2"><img  className="img" src={Image.Folder}/></div>
           <Link to="/Checkinout">Check-in-out</Link>
           </label>
+          <label for="1"> <div className="imgbg1"><img  className="img" src={Image.Add}/></div>
+          <Link to="/addstudents" id="1">Add</Link>
+          </label>
+          </div>
           </div>
           </div>
           

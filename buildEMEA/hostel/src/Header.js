@@ -15,8 +15,16 @@ import Checkin from './Checkin';
 import Add from './Add';
 import Login from './Login';
 import Checkinoutedit from './Checkinoutedit';
-
+import Payment from './Payment';
 import Profile from './Profile';
+
+import Paymentbill from './Paymentbill';
+
+import Hostelfeedetails from './Hostelfeedetails';
+import Fooddetails from './Fooddetails';
+import Update from './Update';
+import Updatehostelfee from './Updatehostelfee';
+import Updatefoodfee from './Updatefoodfee';
 class Header extends Component{
   constructor(){
     super();
@@ -42,7 +50,7 @@ class Header extends Component{
           <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route path="/checkinout" element={<Checkinout/>}/>
-         
+          <Route path="/update" element={<Update/>}/>
           <Route path="/details" element={<Details/>}/>
           <Route path="/add" element={<Add/>}/>
           <Route path="/checkinout/checkout" element={<Checkout/>}/>
@@ -50,6 +58,13 @@ class Header extends Component{
          <Route path="/login" element={<Login/>}/>
          <Route path="/checkinoutedit/:slno" element={<Checkinoutedit/>}/>
          <Route path="/profile/:id" element={<Profile/>}/>
+         <Route path="/payment" element={<Payment/>}/>
+         
+         <Route path="/paymentbill/:id" element={<Paymentbill/>}/>
+         <Route path="/updatehostelfee/:slno" element={<Updatehostelfee/>}/>
+         <Route path="/updatefoodfee/:slno" element={<Updatefoodfee/>}/>
+         <Route path="/hostelfeedetails" element={<Hostelfeedetails/>}/>
+         <Route path="/fooddetails" element={<Fooddetails/>}/>
         </Routes>
         </Router>
           

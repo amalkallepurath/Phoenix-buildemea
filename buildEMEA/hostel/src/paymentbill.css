@@ -1,0 +1,25 @@
+#logo{
+    width:100px;
+    height: 150px;
+}
+#center{
+    text-align: center;
+    margin-top: 30px;
+}
+#logotext{
+    display: inline-flex;
+    margin-bottom: 100px;
+}
+#text{
+    display: inline-block;
+    text-align: left;
+    margin-left: 10px;
+}
+#billtable{
+    width:600px;
+    margin-left: 50vh;
+   
+}
+#text #h{
+    margin-left: 1px;
+}
